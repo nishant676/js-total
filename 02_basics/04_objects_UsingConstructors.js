@@ -66,4 +66,30 @@ console.log(obj4)
 
 
    //--->(D) Check property present or Not in obj 
-   console.log(tinderUser.hasOwbPropert('isLogged'))
+   console.log(tinderUser.hasOwnProperty('isLogged'))
+
+
+/*
+    IMP:- How TO Collect Value from obj
+         => When Use:- in obj if need to call a value is more then use
+         => previously get value from obj like : objname.propery --> to get value
+         => But now u want maximum tym use then its like messy to write so use like:-
+         SYNTAX:- 
+             const {property u require} = property containing object 
+             => or const {prpertyname : u want tocall by name} = property containing obj name
+             => from now on if u need the propert value
+              -> then just write "console.log(propert name)"
+*/
+
+   const course = {
+    coursename :"javascript",
+    price : "999",
+    courseteacher : "mark"
+   }
+//Type-1 to write
+   const {courseteacher} = course;
+   console.log(courseteacher); //mark
+
+//Type-2 to write
+   const{coursename: name} =course;
+   console.log(name);//javascript

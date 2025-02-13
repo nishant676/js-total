@@ -66,5 +66,7 @@ const mulNum = (num1,num2) =>  (num1 * num2)
 console.log(mulNum(2,4)); //8
 
 
+const newArr = [2,5,67,85,9]
+newArr.forEach((ar)=>console.log(ar) );
 
 
